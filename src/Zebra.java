@@ -1,17 +1,22 @@
-public class Zebra extends Animal{
+public class Zebra {
+    public int numLegs;
+    public int numEyes;
 
     public Zebra(){
         numLegs = 4;
         numEyes = 2;
     }
-
-    @Override
-    public void makeSound() {
-        System.out.println("i neigh");
+    public int getNumLegs(){
+        return numLegs;
+    }
+    public void setNumLegs(int numLegs){
+        this.numLegs = numLegs;
+    }
+    public int getnumEyes(){
+        return numEyes;
     }
 
-    @Override
-    public void howFast() {
-        System.out.println("I am fast");
+    public void setNumEyes(int numEyes){
+        this.numEyes = numEyes;
     }
 }

@@ -1,18 +1,23 @@
-public class Gorilla extends Animal{
+public class Gorilla {
+    public int bananasConsumed;
+    public int wieght;
 
     public Gorilla(){
-        numLegs = 2;
-        numEyes = 2;
+        bananasConsumed = 2060;
+        wieght = 213;
     }
-
-    @Override
-    public void makeSound() {
-        System.out.println("i pound chest");
+    public int getBananasConsumed(){
+        return bananasConsumed;
     }
+    public void setBananasConsumed(int bananasConsumed){
+        this.bananasConsumed = bananasConsumed;
 
-    @Override
-    public void howFast() {
-        System.out.println("I am fast");
+    }
+    public int getWieght(){
+        return wieght;
+    }
+    public void setWieght(int wieght){
+        this.wieght = wieght;
     }
 }
 
